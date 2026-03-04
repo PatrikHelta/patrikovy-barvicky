@@ -1,5 +1,7 @@
 # Patrikovy barvičky VS Code Theme
 
+![Preview](./screenshot.webp)
+
 - blue theme - if you prefer blue backgrounds
 - grey theme - if you prefer grey backgrounds
 - legacy theme - it's a mess
