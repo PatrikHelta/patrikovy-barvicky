@@ -1,0 +1,69 @@
+{
+  "name": "color-theme-patrikovy-barvicky",
+  "displayName": "Patrikovy barvičky",
+  "description": "Patrikovy krásné barvičky a fonty.",
+  "version": "0.4.0",
+  "engines": {
+    "vscode": "^1.105.1"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Patrikovy barvičky Grey",
+        "uiTheme": "vs-dark",
+        "path": "./themes/grey.json"
+      },
+      {
+        "label": "Patrikovy barvičky Blue",
+        "uiTheme": "vs-dark",
+        "path": "./themes/blue.json"
+      },
+      {
+        "label": "Patrikovy barvičky LEGACY",
+        "uiTheme": "vs-dark",
+        "path": "./themes/original.json"
+      }
+    ],
+    "configuration": {
+      "title": "PatrikovyBarvičky",
+      "type": "object",
+      "properties": {
+        "editor.patrikovyBarvicky.operatorMonoFont": {
+          "type": "string",
+          "enum": [
+            "off",
+            "Operator Mono",
+            "Operator Mono SSm"
+          ],
+          "markdownEnumDescriptions": [
+            "Don't set Operator Mono font",
+            "Set Operator Mono font",
+            "Set Operator Mono SSm font"
+          ],
+          "default": "off",
+          "description": "If you have Operator Mono font installed, you can use predefined editor settings for it. Your font family should have ligatures added. Optionally you can also add monospaced Nerd Fonts."
+        }
+      }
+    },
+    "configurationDefaults": {
+      "editor.fontFamily": "'OperatorMonoSSmLig Nerd Font Mono', 'OperatorMonoLig Nerd Font Mono', 'Operator Mono SSm Lig', 'Operator Mono Lig', 'Fira Code', monospace",
+      "editor.fontWeight": "100",
+      "editor.fontSize": 16,
+      "editor.lineHeight": 19,
+      "editor.fontLigatures": true,
+      "editor.renderWhitespace": "selection",
+      "editor.foldingImportsByDefault": false,
+      "editor.accessibilitySupport": "off",
+      "editor.minimap.enabled": true,
+      "workbench.activityBar.location": "top",
+      "workbench.layoutControl.enabled": false,
+      "terminal.integrated.fontFamily": "'OperatorMonoSSmLig Nerd Font Mono', 'OperatorMonoLig Nerd Font Mono', 'CaskaydiaCove Nerd Font Mono'",
+      "terminal.integrated.fontSize": 14,
+      "terminal.integrated.fontWeightBold": "400",
+      "terminal.integrated.fontWeight": "100"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Color Preview</title>
+    <style>
+      body {
+        font-family: monospace;
+        background: repeating-linear-gradient(
+          45deg,
+          #2d2d2d 0px,
+          #2d2d2d 40px,
+          #292c33 40px,
+          #292c33 80px
+        );
+        color: #fff;
+        padding: 20px;
+      }
+      .colors {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        gap: 20px;
+      }
+      .color-box {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+      }
+      .swatch {
+        width: 200px;
+        height: 40px;
+        margin-right: 10px;
+        border: 1px solid #444;
+      }
+      .label {
+        font-size: 14px;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Colors Preview</h2>
+
+    <div id="colors" class="colors">
+      <div id="final"></div>
+    </div>
+
+    <script>
+      const final = {
+        'theme-grey': '#2d2d2d',
+        'theme-blue': '#292c33',
+        'black-1': '#00000020',
+        'black-2': '#00000033',
+        'black-3': '#00000066',
+        'white-1': '#ffffff07',
+        'white-2': '#ffffff15',
+        'white-3': '#ffffff20',
+        'white-4': '#ffffff33',
+        'white-5': '#ffffff55',
+        'white-6': '#ffffff88',
+        'white-7': '#ffffffcc',
+        red: '#f38f91',
+        orange: '#faa678',
+        yellow: '#ffc34c',
+        sun: '#f9d99a',
+        green: '#a3cca3',
+        aqua: '#29ebeb',
+        blue: '#78a2cc',
+        purple: '#cca7cc',
+      };
+
+      Object.keys(final).forEach((key) => {
+        const color = final[key];
+        const div = document.createElement('div');
+        div.className = 'color-box';
+        div.innerHTML = `<div class="swatch" style="background:${color}"></div><div class="label">${key}: ${color}</div>`;
+        document.getElementById('final').appendChild(div);
+      });
+    </script>
+  </body>
+</html>
