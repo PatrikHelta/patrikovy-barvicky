@@ -3,6 +3,7 @@
   "displayName": "Patrikovy barvičky",
   "description": "Patrikovy krásné barvičky a fonty.",
   "version": "0.4.0",
+  "repository": "https://github.com/PatrikHelta/patrikovy-barvicky",
   "engines": {
     "vscode": "^1.105.1"
   },
