@@ -30,7 +30,6 @@
     // black-2
     "sideBarStickyScroll.shadow": "#00000033",
     "scrollbar.shadow": "#00000033",
-    "sideBar.border": "#00000033",
 
     // black-3
     "dropdown.border": "#00000066",
@@ -56,6 +55,7 @@
     "scrollbarSlider.background": "#ffffff20",
     "scrollbarSlider.hoverBackground": "#ffffff20",
     "focusBorder": "#ffffff20",
+    "sideBar.border": "#ffffff20",
 
     // white-4
     "button.background": "#ffffff33",

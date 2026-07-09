@@ -2,7 +2,7 @@
   "name": "color-theme-patrikovy-barvicky",
   "displayName": "Patrikovy barvičky",
   "description": "Patrikovy krásné barvičky a fonty.",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "repository": "https://github.com/PatrikHelta/patrikovy-barvicky",
   "engines": {
     "vscode": "^1.105.1"
@@ -28,27 +28,6 @@
         "path": "./themes/original.json"
       }
     ],
-    "configuration": {
-      "title": "PatrikovyBarvičky",
-      "type": "object",
-      "properties": {
-        "editor.patrikovyBarvicky.operatorMonoFont": {
-          "type": "string",
-          "enum": [
-            "off",
-            "Operator Mono",
-            "Operator Mono SSm"
-          ],
-          "markdownEnumDescriptions": [
-            "Don't set Operator Mono font",
-            "Set Operator Mono font",
-            "Set Operator Mono SSm font"
-          ],
-          "default": "off",
-          "description": "If you have Operator Mono font installed, you can use predefined editor settings for it. Your font family should have ligatures added. Optionally you can also add monospaced Nerd Fonts."
-        }
-      }
-    },
     "configurationDefaults": {
       "editor.fontFamily": "'OperatorMonoSSmLig Nerd Font Mono', 'OperatorMonoLig Nerd Font Mono', 'Operator Mono SSm Lig', 'Operator Mono Lig', 'Fira Code', monospace",
       "editor.fontWeight": "100",
@@ -59,7 +38,6 @@
       "editor.foldingImportsByDefault": false,
       "editor.accessibilitySupport": "off",
       "editor.minimap.enabled": true,
-      "workbench.activityBar.location": "top",
       "workbench.layoutControl.enabled": false,
       "terminal.integrated.fontFamily": "'OperatorMonoSSmLig Nerd Font Mono', 'OperatorMonoLig Nerd Font Mono', 'CaskaydiaCove Nerd Font Mono'",
       "terminal.integrated.fontSize": 14,
