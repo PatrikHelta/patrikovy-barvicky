@@ -1,0 +1,20 @@
+themes/blue.json
+  h_51110d54764e29 58
+CHANGELOG.md
+  h_51110d54764e29 3-8
+themes/grey.json
+  h_51110d54764e29 58
+package.json
+  h_51110d54764e29 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "fa50f95db442387d4545dddbdd7469a638f1dc5d",
+  "prompts": {},
+  "humans": {
+    "h_51110d54764e29": {
+      "author": "Patrik Helta <patrik.helta@inveo.cz>"
+    }
+  }
+}
